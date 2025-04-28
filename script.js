@@ -21,7 +21,7 @@ function setupTabs(listSelector, barId) {
       visibleItem.style.display = "none";
       pressedButton.style.color = "black";
       visibleItem = list[index];
-      pressedButton = list[index];
+      pressedButton = button;
       visibleItem.style.display = "block";
       pressedButton.style.color = "grey";
     };
