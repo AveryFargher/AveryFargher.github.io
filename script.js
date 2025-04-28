@@ -19,6 +19,6 @@ visibleSection.style.display = "block";
 sectionButtons.forEach((button, index) => {
   button.onclick = function(){
     visibleSection.style.display = "none";
-    visibleSection = sectionList[index];
+    visibleSection = sectionsList[index];
     visibleSection.style.display = "block";}
 });
