@@ -44,7 +44,7 @@ body {
 }
 
 .bar {
-  display: flex;
+  display: inline-flex;
   flex-direction; row;
   gap: 10px;
 }
