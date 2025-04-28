@@ -13,7 +13,6 @@ for(const section of sectionsList){
   section.style.display = "none"
 }
 
-sectionButtons[0].style.color = var(--greyed-out)
 let visibleSection = sectionsList[0];
 visibleSection.style.display = "block";
 
