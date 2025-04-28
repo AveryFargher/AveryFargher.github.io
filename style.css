@@ -45,7 +45,7 @@ body {
 
 .pressed {
   transform: scale(1.25);
-  color: grey;
+  color: red;
 }
 
 .bar {
