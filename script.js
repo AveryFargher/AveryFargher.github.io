@@ -35,7 +35,7 @@ for(const project of projectsList){
   button.textContent = project.id.replace("-"," ");
   projectsBar.appendChild(button);
   projectButtons.push(button);
-  section.style.display = "none"
+  project.style.display = "none"
 }
 
 let visibleProject = projectsList[0];
