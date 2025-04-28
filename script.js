@@ -22,3 +22,28 @@ sectionButtons.forEach((button, index) => {
     visibleSection = sectionsList[index];
     visibleSection.style.display = "block";}
 });
+
+
+const projectsList = document.querySelectorAll('.project');
+const projectsBar = document.getElementById("projectsBar");
+let projectButtons = [];
+
+
+
+for(const project of projectsList){
+  let button = document.createElement("span");
+  button.textContent = project.id.replace("-"," ");
+  projectsBar.appendChild(button);
+  projectButtons.push(button);
+  section.style.display = "none"
+}
+
+let visibleProject = projectsList[0];
+visibleProject.style.display = "block";
+
+projectButtons.forEach((button, index) => {
+  button.onclick = function(){
+    visibleProject.style.display = "none";
+    visibleProject = projectsList[index];
+    visibleProject.style.display = "block";}
+});
