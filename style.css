@@ -32,3 +32,9 @@ body {
   align-content: center;
   text-align: center;
 }
+
+.clickable {
+  cursor: pointer;
+}
+  
+  
