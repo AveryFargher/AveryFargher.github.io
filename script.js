@@ -12,14 +12,18 @@ function setupTabs(listSelector, barId) {
   });
 
   let visibleItem = list[0];
+  let pressedButton = buttons[0];
   visibleItem.style.display = "block";
-  visibleItem.style.color = "grey";
+  pressedButton.style.color = "grey";
 
   buttons.forEach((button, index) => {
     button.onclick = function() {
       visibleItem.style.display = "none";
+      pressedButton.style.color = "black";
       visibleItem = list[index];
+      pressedButton = list[index];
       visibleItem.style.display = "block";
+      pressedButton.style.color = "grey";
     };
   });
 }
