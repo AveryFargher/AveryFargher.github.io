@@ -1,6 +1,6 @@
 
 const sectionsList = document.querySelectorAll('.section');
-const sections = document.getElementById("sections");
+const sectionsBar = document.getElementById("sectionsBar");
 
 
 
@@ -8,5 +8,5 @@ const sections = document.getElementById("sections");
 for(const section of sectionsList){
   let button = document.createElement("span");
   button.textContent = section.id.replace("-"," ");
-  sections.appendChild(button);
+  sectionsBar.appendChild(button);
 }
