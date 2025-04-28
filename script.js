@@ -7,7 +7,7 @@ let sectionButtons = [];
 
 for(const section of sectionsList){
   let button = document.createElement("span");
-  button.textContent = section.id.replace("-"," ");
+  button.textContent = section.id.replace(/-/g," ");
   sectionsBar.appendChild(button);
   sectionButtons.push(button);
   section.style.display = "none"
@@ -32,7 +32,7 @@ let projectButtons = [];
 
 for(const project of projectsList){
   let button = document.createElement("span");
-  button.textContent = project.id.replace("-"," ");
+  button.textContent = project.id.replace(/-/g," ");
   projectsBar.appendChild(button);
   projectButtons.push(button);
   project.style.display = "none"
