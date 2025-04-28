@@ -32,6 +32,8 @@ function setupTabs(listSelector, barId) {
   });
 }
 
+
+  
 // Set up each tab group
 setupTabs('.section', 'sectionsBar');
 setupTabs('.project', 'projectsBar');
