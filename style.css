@@ -10,6 +10,14 @@
   --heading-font: 'Merriweather', serif;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
 /*Global Reset*/
 * {
   margin: 0;
