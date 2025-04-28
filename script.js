@@ -6,6 +6,7 @@ function setupTabs(listSelector, barId) {
   list.forEach(item => {
     let button = document.createElement("span");
     button.textContent = item.id.replace(/-/g, " ");
+    button.classList.add('clickable');
     bar.appendChild(button);
     buttons.push(button);
     item.style.display = "none";
@@ -15,15 +16,18 @@ function setupTabs(listSelector, barId) {
   let pressedButton = buttons[0];
   visibleItem.style.display = "block";
   pressedButton.style.color = "grey";
+  pressedButton.classList.remove('clickable');
 
   buttons.forEach((button, index) => {
     button.onclick = function() {
       visibleItem.style.display = "none";
       pressedButton.style.color = "black";
+      pressedButton.classList.add('clickable');
       visibleItem = list[index];
       pressedButton = button;
       visibleItem.style.display = "block";
       pressedButton.style.color = "grey";
+      pressedButton.classList.remove('clickable');
     };
   });
 }
