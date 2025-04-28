@@ -54,7 +54,7 @@ body {
   gap: 10px;
 }
 
-.iconLink a { 
+.iconLink { 
   vertical-align: middle;
   text-decoration: none;
 }
