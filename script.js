@@ -13,6 +13,7 @@ function setupTabs(listSelector, barId) {
 
   let visibleItem = list[0];
   visibleItem.style.display = "block";
+  visibleItem.style.color = "grey";
 
   buttons.forEach((button, index) => {
     button.onclick = function() {
