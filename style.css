@@ -42,5 +42,11 @@ body {
 .clickable:hover {
   transform: scale(1.1);
 }
+
+.bar {
+  display: flex;
+  flex-direction; row;
+  gap: 10px;
+}
   
   
