@@ -47,3 +47,29 @@ projectButtons.forEach((button, index) => {
     visibleProject = projectsList[index];
     visibleProject.style.display = "block";}
 });
+
+
+
+const interestsList = document.querySelectorAll('.interest');
+const interestsBar = document.getElementById("interestsBar");
+let interestButtons = [];
+
+
+
+for(const interest of interestsList){
+  let button = document.createElement("span");
+  button.textContent = interest.id.replace(/-/g," ");
+  interestsBar.appendChild(button);
+  interestButtons.push(button);
+  interest.style.display = "none"
+}
+
+let visibleInterest = interestsList[0];
+visibleInterest.style.display = "block";
+
+interestButtons.forEach((button, index) => {
+  button.onclick = function(){
+    visibleInterest.style.display = "none";
+    visibleInterest = interestsList[index];
+    visibleInterest.style.display = "block";}
+});
