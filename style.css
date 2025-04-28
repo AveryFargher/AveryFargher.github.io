@@ -44,8 +44,8 @@ body {
 }
 
 .pressed {
-  transform: scale(1.25);
-  color: red;
+  text-decoration: underline;
+  color: grey;
 }
 
 .bar {
