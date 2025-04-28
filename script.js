@@ -15,18 +15,18 @@ function setupTabs(listSelector, barId) {
   let visibleItem = list[0];
   let pressedButton = buttons[0];
   visibleItem.style.display = "block";
-  pressedButton.style.color = "grey";
+  pressedButton.classList.add('pressed');
   pressedButton.classList.remove('clickable');
 
   buttons.forEach((button, index) => {
     button.onclick = function() {
       visibleItem.style.display = "none";
-      pressedButton.style.color = "black";
+      pressedButton.classList.remove('pressed');
       pressedButton.classList.add('clickable');
       visibleItem = list[index];
       pressedButton = button;
       visibleItem.style.display = "block";
-      pressedButton.style.color = "grey";
+      pressedButton.classList.add('pressed');
       pressedButton.classList.remove('clickable');
     };
   });
