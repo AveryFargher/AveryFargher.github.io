@@ -54,11 +54,12 @@ body {
   gap: 10px;
 }
 
-.iconLink { 
+.iconLink a { 
   vertical-align: middle;
+  text-decoration: none;
 }
 
-.iconLink img { 
+.iconLink > img { 
   height:1em;
 }
   
