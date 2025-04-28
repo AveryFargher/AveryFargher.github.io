@@ -55,5 +55,9 @@ body {
 }
 
 .iconLink { 
+  vertical-align: middle;
+}
+
+.iconLink img { 
   
   
