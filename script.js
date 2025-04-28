@@ -13,7 +13,7 @@ for(const section of sectionsList){
   section.style.display = "none"
 }
 
-let visibleSection = sectionList[0];
+let visibleSection = sectionsList[0];
 visibleSection.style.display = "block";
 
 sectionButtons.forEach((button, index) => {
