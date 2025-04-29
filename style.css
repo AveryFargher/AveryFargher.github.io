@@ -68,5 +68,6 @@ body {
   max-height: 90vh;
   width: auto;
   height: auto;
+  display: none;
 }
   
