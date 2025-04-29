@@ -63,7 +63,15 @@ body {
   height:2em;
 }
 
-.imageGallery > img {
+.imageDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+}
+    
+.imageDisplay > img {
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
