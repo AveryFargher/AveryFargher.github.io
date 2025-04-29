@@ -50,4 +50,4 @@ setupTabs('.project', 'projectsBar');
 setupTabs('.interest', 'interestsBar');
 
 // Set up each gallery
-setupTabs('personalPiecesThumbnails', 'personalPieces');
+setupGallery('personalPiecesThumbnails', 'personalPieces');
