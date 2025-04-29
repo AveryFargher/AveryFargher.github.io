@@ -32,9 +32,22 @@ function setupTabs(listSelector, barId) {
   });
 }
 
+function setupGallery(thumbnailsId, galleryId) {
+  const gallery = document.getElementById('galleryId');
+  const galleryImages = gallery.children;
+  const thumbnails = document.getElementById('thumbnailsId');
+  const thumbnailImages = thumbnails.children; 
 
+  thumbnailImages.forEach((thumbnail, index) => {
+    thumbnail.onclick = function() {
+      visibleItem.style.display = "none";
+      visibleItem = galleryImages[index];
+      visibleItem.style.display = "block";
   
 // Set up each tab group
 setupTabs('.section', 'sectionsBar');
 setupTabs('.project', 'projectsBar');
 setupTabs('.interest', 'interestsBar');
+
+// Set up each gallery
+setupTabs('personalPiecesThumbnails', 'personalPieces');
