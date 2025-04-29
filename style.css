@@ -62,4 +62,11 @@ body {
 .iconLink > img { 
   height:2em;
 }
+
+.imageGallery img {
+  maxwidth: 90vw;
+  maxheight: 90vh;
+  width: auto;
+  height: auto;
+}
   
