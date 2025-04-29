@@ -49,6 +49,7 @@ function setupGallery(thumbnailsId, galleryId) {
       visibleItem.style.display = 'none';
     }
   });
+}
   
 // Set up each tab group
 setupTabs('.section', 'sectionsBar');
