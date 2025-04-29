@@ -43,6 +43,12 @@ function setupGallery(thumbnailsId, galleryId) {
       visibleItem.style.display = "none";
       visibleItem = galleryImages[index];
       visibleItem.style.display = "block";
+
+  visibleItem.addEventListener('click', (e) => {
+    if (e.target !== visibleItem) {
+      visibleItem.style.display = 'none';
+    }
+  });
   
 // Set up each tab group
 setupTabs('.section', 'sectionsBar');
