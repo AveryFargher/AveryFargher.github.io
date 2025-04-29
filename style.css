@@ -83,3 +83,6 @@ body {
   display: none;
 }
   
+.thumbnailDisplay > img {
+  width: 100px
+}
