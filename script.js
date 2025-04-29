@@ -37,6 +37,7 @@ function setupGallery(thumbnailsId, galleryId) {
   const galleryImages = gallery.children;
   const thumbnails = document.getElementById(thumbnailsId);
   const thumbnailImages = thumbnails.children; 
+  let visibleItem
 
   thumbnailImages.forEach((thumbnail, index) => {
     thumbnail.onclick = function() {
