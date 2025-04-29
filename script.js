@@ -48,6 +48,8 @@ function setupGallery(thumbnailsId, galleryId) {
     if (e.target !== visibleItem) {
       visibleItem.style.display = 'none';
     }
+      });
+    };
   });
 }
   
