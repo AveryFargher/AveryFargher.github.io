@@ -33,9 +33,9 @@ function setupTabs(listSelector, barId) {
 }
 
 function setupGallery(thumbnailsId, galleryId) {
-  const gallery = document.getElementById('galleryId');
+  const gallery = document.getElementById(galleryId);
   const galleryImages = gallery.children;
-  const thumbnails = document.getElementById('thumbnailsId');
+  const thumbnails = document.getElementById(thumbnailsId);
   const thumbnailImages = thumbnails.children; 
 
   thumbnailImages.forEach((thumbnail, index) => {
