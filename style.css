@@ -63,7 +63,7 @@ body {
   height:2em;
 }
 
-.imageGallery img {
+.imageGallery > img {
   maxwidth: 90vw;
   maxheight: 90vh;
   width: auto;
