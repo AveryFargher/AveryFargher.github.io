@@ -47,7 +47,7 @@ function setupGallery(thumbnailsId, galleryId) {
   visibleItem.addEventListener('click', (e) => {
     if (e.target !== visibleItem) {
       visibleItem.style.display = 'none';
-    }
+    };
   });
 }
   
