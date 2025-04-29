@@ -72,6 +72,9 @@ body {
 }
     
 .imageDisplay > img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   max-width: 90vw;
   max-height: 90vh;
   width: auto;
